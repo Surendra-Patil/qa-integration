@@ -26,7 +26,4 @@ do
     sTx2=$("${DAEMON}" tx vault withdraw 5 1000 --from "${acc1}" --chain-id "${CHAINID}" --keyring-backend test --gas auto --node $RPC --output json -y --sequence $a) 
     sTxHash2=$(echo "${sTx2}" | jq -r '.txhash')
     echo "** Vault Withdraw TX HASH :: $sTxHash2 **"
-    
-   
-
 done
